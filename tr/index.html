@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBudget Gizlilik Politikası</title>
+  <meta name="description" content="SmartBudget Android uygulaması için Gizlilik Politikası.">
+  <style>
+    :root { --bg: #f4efe6; --surface: rgba(255, 252, 247, 0.9); --text: #1f2430; --muted: #5f6878; --line: rgba(31, 36, 48, 0.12); --accent: #1d6f5f; --accent-strong: #124b41; --shadow: 0 18px 45px rgba(31, 36, 48, 0.10); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--text); background: radial-gradient(circle at top left, rgba(215, 169, 75, 0.24), transparent 32%), radial-gradient(circle at bottom right, rgba(29, 111, 95, 0.20), transparent 34%), linear-gradient(180deg, #f7f1e8 0%, #efe7da 100%); line-height: 1.7; }
+    .shell { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero { background: linear-gradient(135deg, rgba(29, 111, 95, 0.95), rgba(18, 75, 65, 0.92)); color: #fff9f0; border-radius: 28px; padding: 40px 32px; box-shadow: var(--shadow); overflow: hidden; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: auto -120px -120px auto; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+    .language-switch { display: flex; gap: 10px; margin-bottom: 18px; position: relative; z-index: 1; }
+    .language-switch a { text-decoration: none; color: #fff9f0; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.08); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; transition: background 0.2s ease, transform 0.2s ease; }
+    .language-switch a.active, .language-switch a:hover { background: rgba(255,255,255,0.18); transform: translateY(-1px); }
+    .eyebrow { letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.78rem; opacity: 0.82; margin: 0 0 12px; }
+    h1 { font-size: clamp(2.1rem, 4vw, 3.4rem); line-height: 1.1; margin: 0 0 14px; max-width: 12ch; }
+    .hero p { margin: 0; max-width: 62ch; font-size: 1.02rem; color: rgba(255, 249, 240, 0.92); position: relative; z-index: 1; }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 24px; position: relative; z-index: 1; }
+    .meta-card { border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.08); border-radius: 18px; padding: 14px 16px; backdrop-filter: blur(6px); }
+    .meta-card strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.8; margin-bottom: 4px; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 24px; margin-top: 28px; align-items: start; }
+    .content { display: grid; gap: 18px; }
+    .card, .toc { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+    .card { padding: 28px 24px; }
+    .card h2 { margin: 0 0 14px; font-size: 1.35rem; color: var(--accent-strong); }
+    .card p:first-of-type, .card ul:first-of-type { margin-top: 0; }
+    .card ul { margin: 10px 0 0 0; padding-left: 20px; }
+    .card li + li { margin-top: 8px; }
+    .toc { position: sticky; top: 18px; padding: 20px; }
+    .toc h3 { margin: 0 0 12px; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+    .toc a { display: block; padding: 10px 12px; margin-bottom: 8px; color: var(--text); text-decoration: none; border-radius: 12px; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+    .toc a:hover { background: rgba(29, 111, 95, 0.08); color: var(--accent-strong); transform: translateX(2px); }
+    a { color: var(--accent-strong); }
+    .foot { margin-top: 26px; color: var(--muted); font-size: 0.95rem; text-align: center; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .toc { position: static; order: -1; } .hero { padding: 32px 22px; } .card { padding: 24px 18px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <section class="hero">
+      <div class="language-switch"><a href="/smartbudget-privacy-policy/">English</a><a class="active" href="/smartbudget-privacy-policy/tr/">Türkçe</a></div>
+      <p class="eyebrow">SmartBudget Android Uygulaması</p>
+      <h1>Gizlilik Politikası</h1>
+      <p>Bu Gizlilik Politikası, SmartBudget Android uygulamasını kullandığınızda bilgilerin nasıl toplandığını, kullanıldığını, saklandığını ve korunduğunu açıklar. Uygulama kişisel finans yönetimi amacıyla tasarlanmıştır ve kullanıcı verilerinin büyük bölümünü cihaz üzerinde yerel olarak saklar.</p>
+      <div class="meta"><div class="meta-card"><strong>Yürürlük Tarihi</strong><span>18 Mart 2026</span></div><div class="meta-card"><strong>Uygulama</strong><span>SmartBudget</span></div><div class="meta-card"><strong>Paket Adı</strong><span>com.smartbudgetlabs.finance</span></div></div>
+    </section>
+    <div class="grid">
+      <main class="content">
+        <section class="card" id="overview"><h2>1. Genel Bakış</h2><p>SmartBudget; işlem kaydı tutma, bütçe yönetimi, harcama istatistiklerini görüntüleme, yerel yedek oluşturma ve isteğe bağlı premium özellikleri kullanma imkanı sunan bir bütçe ve gider takip uygulamasıdır.</p><p>Uygulama hesap kaydı gerektirmez ve bütçe verilerinizi saklamak için geliştirici tarafından işletilen bir bulut altyapısı kullanmaz. Verilerinizin büyük kısmı, siz dışa aktarmayı veya paylaşmayı seçmediğiniz sürece cihazınızda kalır.</p></section>
+        <section class="card" id="collect"><h2>2. Topladığımız Bilgiler</h2><p>SmartBudget kullanım biçiminize bağlı olarak aşağıdaki bilgi kategorilerini işleyebilir:</p><ul><li>Girdiğiniz finansal kayıtlar: işlemler, kategoriler, notlar, bütçeler, tekrarlayan kayıtlar ve hesap bakiyeleri.</li><li>Yerel olarak saklanan uygulama ayarları: para birimi, tema tercihi, hatırlatıcı ayarları, premium durumu ve uygulama kilidi tercihi.</li><li>Elle oluşturmayı ve paylaşmayı seçtiğiniz yerel yedek dosyaları.</li><li>Google Play Faturalandırma üzerinden sağlanan abonelik ve satın alma durumu bilgileri.</li><li>Uygulamanın ücretsiz sürümünde Google AdMob tarafından işlenen reklamla ilgili bilgiler.</li><li>Hatırlatmaları etkinleştirmeniz halinde bildirim izin durumu.</li></ul></section>
+        <section class="card" id="local-storage"><h2>3. Cihazınızda Yerel Olarak Saklanan Veriler</h2><p>SmartBudget, bütçe verilerinizi cihazınızda yerel uygulama depolaması kullanarak saklar. Buna finansal kayıtlarınız, ayarlarınız, premium durumu ve uygulama yapılandırması dahildir.</p><p>Bu yerel bilgiler yalnızca işlemler geçmişi, raporlama, hatırlatmalar ve premium deneyim yönetimi gibi temel uygulama işlevlerini sunmak amacıyla kullanılır.</p></section>
+        <section class="card" id="backup"><h2>4. Yedekler ve Dışa Aktarımlar</h2><p>SmartBudget, manuel olarak yedek dosyaları ve CSV dışa aktarımları oluşturmanıza olanak tanır. Bu dosyalar; işlemler, hesaplar, bütçeler, tekrarlayan işlemler, notlar ve zaman damgaları dahil olmak üzere bütçe verilerinizi içerebilir.</p><ul><li>Yedek dosyaları cihazınızda yerel olarak oluşturulur.</li><li>Dışa aktarılan dosyalar yalnızca siz paylaşmayı seçerseniz paylaşılır.</li><li>Bu dosyaları geliştirici tarafından kontrol edilen sunuculara otomatik olarak yüklemeyiz.</li><li>Bir yedek dosyasını üçüncü taraf uygulamalar veya bulut hizmetleriyle paylaşırsanız ya da saklarsanız, bu işlem sizin kontrolünüzdedir ve ilgili üçüncü tarafların politikalarına tabidir.</li></ul></section>
+        <section class="card" id="biometric"><h2>5. Biyometrik ve Cihaz Kimlik Doğrulaması</h2><p>SmartBudget, uygulamaya erişimi korumak için isteğe bağlı olarak Android biyometrik doğrulamasını veya cihaz kimlik bilgilerini kullanabilir.</p><ul><li>Biyometrik doğrulama Android işletim sistemi tarafından gerçekleştirilir.</li><li>Biyometrik şablonlarınızı, parmak izi verilerinizi, yüz verilerinizi veya PIN/parolanızı toplamaz, erişmez ya da saklamayız.</li><li>Uygulama yalnızca sistemden kimlik doğrulama sonucunu alır.</li></ul></section>
+        <section class="card" id="ads"><h2>6. Ücretsiz Sürümde Reklamlar</h2><p>SmartBudget uygulamasının ücretsiz sürümü Google AdMob üzerinden reklam gösterebilir. AdMob ve iş ortakları; reklam sunmak, sınırlamak, ölçmek veya kişiselleştirmek amacıyla kullanıcı bölgesi, izin tercihleri ve platform kurallarına bağlı olarak bazı teknik bilgileri işleyebilir.</p><ul><li>Buna cihaz tanımlayıcıları, IP adresi, uygulama etkileşim verileri, IP üzerinden yaklaşık konum ve teşhis verileri dahil olabilir.</li><li>Reklam sunumu, ilgili hukuk düzenlemeleri gerektiriyorsa kullanıcı onay ekranlarına tabi olabilir.</li><li>Premium abonelerin reklamsız deneyim alması amaçlanır.</li></ul><p>Google'ın reklam ürünlerinde verileri nasıl işlediği hakkında daha fazla bilgi için: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Gizlilik Politikası</a>.</p></section>
+        <section class="card" id="billing"><h2>7. Abonelikler ve Google Play Faturalandırma</h2><p>SmartBudget, Google Play Faturalandırma üzerinden aylık ve yıllık premium abonelikler sunar.</p><ul><li>Satın alma işlemleri, ödeme tahsilatı, yenilemeler, iptaller ve iadeler Google Play tarafından yönetilir.</li><li>Uygulama, premium erişimin aktif olup olmadığı gibi abonelik durumu bilgilerini alabilir.</li><li>Ödeme kartı bilgilerinizin tamamını doğrudan almayız.</li></ul><p>Faturalandırma verilerinin Google Play tarafından nasıl işlendiği hakkında daha fazla bilgi için Google'ın gizlilik dokümantasyonuna bakabilirsiniz.</p></section>
+        <section class="card" id="notifications"><h2>8. Bildirimler ve Hatırlatmalar</h2><p>Hatırlatmaları etkinleştirmeniz halinde SmartBudget, bütçe hatırlatmaları ve tekrarlayan işlem işleme bildirimleri gönderebilmek için bildirim izni isteyebilir.</p><p>Bu bildirimler cihazınızda uygulama tarafından oluşturulur ve yalnızca uygulama işlevlerini desteklemek için kullanılır.</p></section>
+        <section class="card" id="sharing"><h2>9. Bilgiler Nasıl Paylaşılır</h2><p>Kişisel finansal verilerinizi satmayız. Bilgiler yalnızca aşağıdaki sınırlı durumlarda paylaşılabilir:</p><ul><li>Ücretsiz sürümde reklam sunumu için Google AdMob ile.</li><li>Abonelik satın alma işlemleri ve yetkilendirme yönetimi için Google Play ile.</li><li>Kendi verilerinizi cihaz veya üçüncü taraf paylaşım özellikleri ile dışa aktarmayı, paylaşmayı veya yedeklemeyi bilinçli olarak seçtiğinizde.</li><li>Yasal zorunluluk, düzenleyici gereklilik veya geçerli hukuki süreç kapsamında.</li></ul></section>
+        <section class="card" id="retention"><h2>10. Veri Saklama Süresi</h2><ul><li>Uygulama verileri; siz silene, uygulama depolamasını temizleyene, üzerine geri yükleme yapana veya uygulamayı kaldırana kadar cihazınızda kalır.</li><li>Manuel yedek veya dışa aktarma dosyaları, onları sakladığınız yerde siz silene kadar kalır.</li><li>Abonelik ve reklamla ilgili veriler, Google tarafından kendi saklama uygulamaları kapsamında tutulabilir.</li></ul></section>
+        <section class="card" id="security"><h2>11. Güvenlik</h2><p>Yerel depolama, isteğe bağlı uygulama kilidi ve kontrollü dışa aktarma/yedek akışları gibi tasarım kararlarıyla verilerinizin yanlışlıkla açığa çıkma riskini azaltmak için makul önlemler alıyoruz. Bununla birlikte hiçbir elektronik depolama veya iletim yöntemi tamamen güvenli değildir.</p><p>Cihazınızı güvenli tutmak ve paylaşmayı veya saklamayı seçtiğiniz yedek/dışa aktarım dosyalarını korumak sizin sorumluluğunuzdadır.</p></section>
+        <section class="card" id="children"><h2>12. Çocukların Gizliliği</h2><p>SmartBudget, 13 yaşın altındaki çocuklara yönelik değildir ve çocuklardan bilerek kişisel veri toplamayı hedeflemez. Yasalara aykırı şekilde bir çocuğun veri sağladığını düşünüyorsanız lütfen bizimle iletişime geçin.</p></section>
+        <section class="card" id="rights"><h2>13. Seçimleriniz ve Haklarınız</h2><ul><li>Finansal kayıtlarınızı uygulama içinden inceleyebilir ve silebilirsiniz.</li><li>Hatırlatmaları ve uygulama kilidi özelliklerini ayarlardan kapatabilirsiniz.</li><li>Uygulamayı kaldırarak ve yerel verileri temizleyerek verilerinizi silebilirsiniz.</li><li>Aboneliklerinizi Google Play üzerinden yönetebilirsiniz.</li><li>Reklamla ilgili tercihlerinizi cihaz ayarları, izin ekranları ve uygun durumlarda Google hesap ayarları üzerinden yönetebilirsiniz.</li></ul></section>
+        <section class="card" id="changes"><h2>14. Bu Politikadaki Değişiklikler</h2><p>Uygulamadaki değişiklikleri, yasal gereklilikleri veya üçüncü taraf hizmet kullanımını yansıtmak için bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Güncel sürüm bu sayfada yeni yürürlük tarihi ile yayımlanacaktır.</p></section>
+        <section class="card" id="contact"><h2>15. İletişim</h2><p>Bu Gizlilik Politikası veya SmartBudget uygulamasının veri işleme yöntemleri hakkında sorularınız varsa aşağıdaki iletişim bilgilerini kullanabilirsiniz:</p><ul><li>E-posta: <a href="mailto:info@edgeflexpro.com">info@edgeflexpro.com</a></li><li>GitHub profil: <a href="https://github.com/Cigilipuf" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf</a></li><li>Gizlilik politikası deposu: <a href="https://github.com/Cigilipuf/smartbudget-privacy-policy" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf/smartbudget-privacy-policy</a></li></ul></section>
+      </main>
+      <aside class="toc">
+        <h3>Bu sayfada</h3>
+        <a href="#overview">Genel Bakış</a><a href="#collect">Toplanan Bilgiler</a><a href="#local-storage">Yerel Depolama</a><a href="#backup">Yedekler ve Dışa Aktarımlar</a><a href="#biometric">Biyometrik Erişim</a><a href="#ads">Reklamlar</a><a href="#billing">Abonelikler</a><a href="#notifications">Bildirimler</a><a href="#sharing">Paylaşım</a><a href="#retention">Saklama Süresi</a><a href="#security">Güvenlik</a><a href="#children">Çocukların Gizliliği</a><a href="#rights">Haklarınız</a><a href="#changes">Değişiklikler</a><a href="#contact">İletişim</a>
+      </aside>
+    </div>
+    <p class="foot">SmartBudget Gizlilik Politikası.</p>
+  </div>
+</body>
+</html>
