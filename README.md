@@ -1,21 +1,15 @@
 # SmartBudget Privacy Policy
 
-Privacy Policy page for the SmartBudget Android app.
+Privacy Policy pages for the SmartBudget Android app.
 
 ## Repository
 
 - App: SmartBudget
 - Package name: com.smartbudgetlabs.finance
 - Publisher: https://github.com/Cigilipuf
+- Contact: info@edgeflexpro.com
 
-## Publish with GitHub Pages
+## Live URLs
 
-1. Open this repository on GitHub.
-2. Go to Settings -> Pages.
-3. Under Build and deployment, choose Deploy from a branch.
-4. Select the `main` branch and the `/ (root)` folder.
-5. Save.
-
-After Pages is enabled, the public URL should be:
-
-https://cigilipuf.github.io/smartbudget-privacy-policy/
+- English: https://cigilipuf.github.io/smartbudget-privacy-policy/
+- Turkish: https://cigilipuf.github.io/smartbudget-privacy-policy/tr/
