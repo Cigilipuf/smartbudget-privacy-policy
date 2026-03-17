@@ -6,428 +6,72 @@
   <title>SmartBudget Privacy Policy</title>
   <meta name="description" content="Privacy Policy for the SmartBudget Android app.">
   <style>
-    :root {
-      --bg: #f4efe6;
-      --surface: rgba(255, 252, 247, 0.9);
-      --text: #1f2430;
-      --muted: #5f6878;
-      --line: rgba(31, 36, 48, 0.12);
-      --accent: #1d6f5f;
-      --accent-strong: #124b41;
-      --warm: #d7a94b;
-      --shadow: 0 18px 45px rgba(31, 36, 48, 0.10);
-    }
-
+    :root { --bg: #f4efe6; --surface: rgba(255, 252, 247, 0.9); --text: #1f2430; --muted: #5f6878; --line: rgba(31, 36, 48, 0.12); --accent: #1d6f5f; --accent-strong: #124b41; --shadow: 0 18px 45px rgba(31, 36, 48, 0.10); }
     * { box-sizing: border-box; }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(215, 169, 75, 0.24), transparent 32%),
-        radial-gradient(circle at bottom right, rgba(29, 111, 95, 0.20), transparent 34%),
-        linear-gradient(180deg, #f7f1e8 0%, #efe7da 100%);
-      line-height: 1.7;
-    }
-
-    .shell {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 32px 20px 64px;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, rgba(29, 111, 95, 0.95), rgba(18, 75, 65, 0.92));
-      color: #fff9f0;
-      border-radius: 28px;
-      padding: 40px 32px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -120px -120px auto;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.08);
-    }
-
-    .eyebrow {
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      opacity: 0.82;
-      margin: 0 0 12px;
-    }
-
-    h1 {
-      font-size: clamp(2.1rem, 4vw, 3.4rem);
-      line-height: 1.1;
-      margin: 0 0 14px;
-      max-width: 12ch;
-    }
-
-    .hero p {
-      margin: 0;
-      max-width: 62ch;
-      font-size: 1.02rem;
-      color: rgba(255, 249, 240, 0.92);
-    }
-
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .meta-card {
-      border: 1px solid rgba(255,255,255,0.14);
-      background: rgba(255,255,255,0.08);
-      border-radius: 18px;
-      padding: 14px 16px;
-      backdrop-filter: blur(6px);
-    }
-
-    .meta-card strong {
-      display: block;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      opacity: 0.8;
-      margin-bottom: 4px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 280px;
-      gap: 24px;
-      margin-top: 28px;
-      align-items: start;
-    }
-
-    .content {
-      display: grid;
-      gap: 18px;
-    }
-
-    .card, .toc {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(12px);
-    }
-
-    .card {
-      padding: 28px 24px;
-    }
-
-    .card h2 {
-      margin: 0 0 14px;
-      font-size: 1.35rem;
-      color: var(--accent-strong);
-    }
-
-    .card p:first-of-type,
-    .card ul:first-of-type {
-      margin-top: 0;
-    }
-
-    .card ul {
-      margin: 10px 0 0 0;
-      padding-left: 20px;
-    }
-
-    .card li + li {
-      margin-top: 8px;
-    }
-
-    .toc {
-      position: sticky;
-      top: 18px;
-      padding: 20px;
-    }
-
-    .toc h3 {
-      margin: 0 0 12px;
-      font-size: 0.92rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-    }
-
-    .toc a {
-      display: block;
-      padding: 10px 12px;
-      margin-bottom: 8px;
-      color: var(--text);
-      text-decoration: none;
-      border-radius: 12px;
-      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    }
-
-    .toc a:hover {
-      background: rgba(29, 111, 95, 0.08);
-      color: var(--accent-strong);
-      transform: translateX(2px);
-    }
-
-    a {
-      color: var(--accent-strong);
-    }
-
-    .foot {
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      text-align: center;
-    }
-
-    @media (max-width: 860px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .toc {
-        position: static;
-        order: -1;
-      }
-
-      .hero {
-        padding: 32px 22px;
-      }
-
-      .card {
-        padding: 24px 18px;
-      }
-    }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--text); background: radial-gradient(circle at top left, rgba(215, 169, 75, 0.24), transparent 32%), radial-gradient(circle at bottom right, rgba(29, 111, 95, 0.20), transparent 34%), linear-gradient(180deg, #f7f1e8 0%, #efe7da 100%); line-height: 1.7; }
+    .shell { max-width: 980px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero { background: linear-gradient(135deg, rgba(29, 111, 95, 0.95), rgba(18, 75, 65, 0.92)); color: #fff9f0; border-radius: 28px; padding: 40px 32px; box-shadow: var(--shadow); overflow: hidden; position: relative; }
+    .hero::after { content: ""; position: absolute; inset: auto -120px -120px auto; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,0.08); }
+    .language-switch { display: flex; gap: 10px; margin-bottom: 18px; position: relative; z-index: 1; }
+    .language-switch a { text-decoration: none; color: #fff9f0; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.08); border-radius: 999px; padding: 8px 14px; font-size: 0.88rem; transition: background 0.2s ease, transform 0.2s ease; }
+    .language-switch a.active, .language-switch a:hover { background: rgba(255,255,255,0.18); transform: translateY(-1px); }
+    .eyebrow { letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.78rem; opacity: 0.82; margin: 0 0 12px; }
+    h1 { font-size: clamp(2.1rem, 4vw, 3.4rem); line-height: 1.1; margin: 0 0 14px; max-width: 12ch; }
+    .hero p { margin: 0; max-width: 62ch; font-size: 1.02rem; color: rgba(255, 249, 240, 0.92); position: relative; z-index: 1; }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 24px; position: relative; z-index: 1; }
+    .meta-card { border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.08); border-radius: 18px; padding: 14px 16px; backdrop-filter: blur(6px); }
+    .meta-card strong { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.8; margin-bottom: 4px; }
+    .grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 24px; margin-top: 28px; align-items: start; }
+    .content { display: grid; gap: 18px; }
+    .card, .toc { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+    .card { padding: 28px 24px; }
+    .card h2 { margin: 0 0 14px; font-size: 1.35rem; color: var(--accent-strong); }
+    .card p:first-of-type, .card ul:first-of-type { margin-top: 0; }
+    .card ul { margin: 10px 0 0 0; padding-left: 20px; }
+    .card li + li { margin-top: 8px; }
+    .toc { position: sticky; top: 18px; padding: 20px; }
+    .toc h3 { margin: 0 0 12px; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+    .toc a { display: block; padding: 10px 12px; margin-bottom: 8px; color: var(--text); text-decoration: none; border-radius: 12px; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+    .toc a:hover { background: rgba(29, 111, 95, 0.08); color: var(--accent-strong); transform: translateX(2px); }
+    a { color: var(--accent-strong); }
+    .foot { margin-top: 26px; color: var(--muted); font-size: 0.95rem; text-align: center; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .toc { position: static; order: -1; } .hero { padding: 32px 22px; } .card { padding: 24px 18px; } }
   </style>
 </head>
 <body>
   <div class="shell">
     <section class="hero">
+      <div class="language-switch"><a class="active" href="/smartbudget-privacy-policy/">English</a><a href="/smartbudget-privacy-policy/tr/">Türkçe</a></div>
       <p class="eyebrow">SmartBudget Android App</p>
       <h1>Privacy Policy</h1>
-      <p>
-        This Privacy Policy explains how SmartBudget collects, uses, stores, and protects information when you use the SmartBudget Android application. The app is designed as a personal finance tool and stores most user data locally on the user's device.
-      </p>
-      <div class="meta">
-        <div class="meta-card">
-          <strong>Effective Date</strong>
-          <span>18 March 2026</span>
-        </div>
-        <div class="meta-card">
-          <strong>App</strong>
-          <span>SmartBudget</span>
-        </div>
-        <div class="meta-card">
-          <strong>Package Name</strong>
-          <span>com.smartbudgetlabs.finance</span>
-        </div>
-      </div>
+      <p>This Privacy Policy explains how SmartBudget collects, uses, stores, and protects information when you use the SmartBudget Android application. The app is designed as a personal finance tool and stores most user data locally on the user's device.</p>
+      <div class="meta"><div class="meta-card"><strong>Effective Date</strong><span>18 March 2026</span></div><div class="meta-card"><strong>App</strong><span>SmartBudget</span></div><div class="meta-card"><strong>Package Name</strong><span>com.smartbudgetlabs.finance</span></div></div>
     </section>
-
     <div class="grid">
       <main class="content">
-        <section class="card" id="overview">
-          <h2>1. Overview</h2>
-          <p>
-            SmartBudget is a budgeting and expense-tracking app. It helps users record transactions, manage budgets, view spending statistics, create local backups, and optionally subscribe to premium features.
-          </p>
-          <p>
-            We do not require account registration, and we do not operate a developer-controlled cloud backend for storing your budgeting data. Most app information remains on your device unless you choose to export or share it yourself.
-          </p>
-        </section>
-
-        <section class="card" id="collect">
-          <h2>2. Information We Collect</h2>
-          <p>Depending on how you use the app, SmartBudget may process the following categories of information:</p>
-          <ul>
-            <li>Financial records you enter, such as transactions, categories, notes, budgets, recurring items, and account balances.</li>
-            <li>App settings stored locally, such as selected currency, theme preference, reminder settings, premium status, and app lock preference.</li>
-            <li>Local backup files you choose to create and share manually.</li>
-            <li>Subscription and purchase status information provided through Google Play Billing.</li>
-            <li>Advertising-related information processed by Google AdMob in the free version of the app.</li>
-            <li>Notification permission status if you allow reminders.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="local-storage">
-          <h2>3. Data Stored Locally on Your Device</h2>
-          <p>
-            SmartBudget stores your budgeting data locally on your device using local app storage technologies. This includes your financial entries, settings, premium flag, and related app configuration.
-          </p>
-          <p>
-            This local information is used only to provide the app's core functionality, including transaction history, reporting, reminders, and premium experience handling.
-          </p>
-        </section>
-
-        <section class="card" id="backup">
-          <h2>4. Backups and Exports</h2>
-          <p>
-            SmartBudget allows you to create backup files and CSV exports manually. These files may contain your budgeting data, including transactions, accounts, budgets, recurring transactions, notes, and timestamps.
-          </p>
-          <ul>
-            <li>Backup files are generated locally on your device.</li>
-            <li>Exported files are only shared if you choose to share them.</li>
-            <li>We do not automatically upload these files to developer-controlled servers.</li>
-            <li>If you share or store a backup file using third-party apps or cloud services, that sharing is controlled by you and subject to those third parties' policies.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="biometric">
-          <h2>5. Biometric and Device Authentication</h2>
-          <p>
-            SmartBudget can optionally use Android biometric or device credential authentication to lock access to the app.
-          </p>
-          <ul>
-            <li>Biometric verification is handled by the Android operating system.</li>
-            <li>We do not collect, access, or store your biometric templates, fingerprint data, facial data, or PIN/password.</li>
-            <li>The app only receives the authentication result from the system.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="ads">
-          <h2>6. Advertising in the Free Version</h2>
-          <p>
-            The free version of SmartBudget may display ads through Google AdMob. AdMob and its partners may process certain technical information to serve, limit, measure, or personalize ads, depending on user region, consent choices, and platform rules.
-          </p>
-          <ul>
-            <li>This may include device identifiers, IP address, app interaction data, approximate location derived from IP, and diagnostic data.</li>
-            <li>Ad serving may be subject to consent prompts where required by law.</li>
-            <li>Premium subscribers are intended to receive an ad-free experience.</li>
-          </ul>
-          <p>
-            For more information about how Google processes data in advertising products, please review Google's policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
-          </p>
-        </section>
-
-        <section class="card" id="billing">
-          <h2>7. Subscriptions and Google Play Billing</h2>
-          <p>
-            SmartBudget offers monthly and yearly premium subscriptions through Google Play Billing.
-          </p>
-          <ul>
-            <li>Purchase processing, payment collection, renewals, cancellations, and refunds are handled by Google Play.</li>
-            <li>The app may receive subscription state information, such as whether premium access is active.</li>
-            <li>We do not directly receive your full payment card details.</li>
-          </ul>
-          <p>
-            Please refer to Google's privacy documentation for more information about how Google Play handles billing data.
-          </p>
-        </section>
-
-        <section class="card" id="notifications">
-          <h2>8. Notifications and Reminders</h2>
-          <p>
-            If you enable reminders, SmartBudget may request notification permission so it can send local notifications related to budgeting reminders and recurring transaction processing.
-          </p>
-          <p>
-            These notifications are generated by the app on your device and are used only to support app functionality.
-          </p>
-        </section>
-
-        <section class="card" id="sharing">
-          <h2>9. How Information Is Shared</h2>
-          <p>We do not sell your personal financial data. Information may be shared only in limited situations such as:</p>
-          <ul>
-            <li>With Google AdMob for free-tier advertising.</li>
-            <li>With Google Play for subscription purchase processing and entitlement handling.</li>
-            <li>When you intentionally export, share, or back up your own data using device or third-party sharing features.</li>
-            <li>When required by law, regulation, or valid legal process.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="retention">
-          <h2>10. Data Retention</h2>
-          <ul>
-            <li>Local app data remains on your device until you delete it, clear the app's storage, restore over it, or uninstall the app.</li>
-            <li>Manual backup or export files remain wherever you store them until you delete them.</li>
-            <li>Subscription and advertising-related data may be retained by Google under Google's own retention practices.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="security">
-          <h2>11. Security</h2>
-          <p>
-            We take reasonable steps in the app's design to reduce accidental exposure of your information, including local storage, optional app lock support, and controlled export and backup flows. However, no method of electronic storage or transmission is completely secure.
-          </p>
-          <p>
-            You are responsible for keeping your device secure and for protecting any backup or exported files that you choose to store or share.
-          </p>
-        </section>
-
-        <section class="card" id="children">
-          <h2>12. Children's Privacy</h2>
-          <p>
-            SmartBudget is not directed to children under 13, and we do not knowingly design the app to solicit personal information from children. If you believe a child has provided data in violation of applicable law, please contact us.
-          </p>
-        </section>
-
-        <section class="card" id="rights">
-          <h2>13. Your Choices and Rights</h2>
-          <ul>
-            <li>You can review and delete financial entries from within the app.</li>
-            <li>You can disable reminders and app lock features in settings.</li>
-            <li>You can remove the app and clear local data by uninstalling it.</li>
-            <li>You can manage subscriptions through Google Play.</li>
-            <li>You can manage ad-related choices through your device, consent prompts, and Google account settings where applicable.</li>
-          </ul>
-        </section>
-
-        <section class="card" id="changes">
-          <h2>14. Changes to This Policy</h2>
-          <p>
-            We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, or third-party service usage. The updated version will be posted on this page with a revised effective date.
-          </p>
-        </section>
-
-        <section class="card" id="contact">
-          <h2>15. Contact</h2>
-          <p>
-            If you have questions about this Privacy Policy or SmartBudget's data practices, you can contact the publisher through GitHub:
-          </p>
-          <ul>
-            <li>GitHub profile: <a href="https://github.com/Cigilipuf" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf</a></li>
-            <li>Privacy policy repository: <a href="https://github.com/Cigilipuf/smartbudget-privacy-policy" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf/smartbudget-privacy-policy</a></li>
-            <li>Issues page: <a href="https://github.com/Cigilipuf/smartbudget-privacy-policy/issues" target="_blank" rel="noopener noreferrer">Submit a question or request</a></li>
-          </ul>
-        </section>
+        <section class="card" id="overview"><h2>1. Overview</h2><p>SmartBudget is a budgeting and expense-tracking app. It helps users record transactions, manage budgets, view spending statistics, create local backups, and optionally subscribe to premium features.</p><p>We do not require account registration, and we do not operate a developer-controlled cloud backend for storing your budgeting data. Most app information remains on your device unless you choose to export or share it yourself.</p></section>
+        <section class="card" id="collect"><h2>2. Information We Collect</h2><p>Depending on how you use the app, SmartBudget may process the following categories of information:</p><ul><li>Financial records you enter, such as transactions, categories, notes, budgets, recurring items, and account balances.</li><li>App settings stored locally, such as selected currency, theme preference, reminder settings, premium status, and app lock preference.</li><li>Local backup files you choose to create and share manually.</li><li>Subscription and purchase status information provided through Google Play Billing.</li><li>Advertising-related information processed by Google AdMob in the free version of the app.</li><li>Notification permission status if you allow reminders.</li></ul></section>
+        <section class="card" id="local-storage"><h2>3. Data Stored Locally on Your Device</h2><p>SmartBudget stores your budgeting data locally on your device using local app storage technologies. This includes your financial entries, settings, premium flag, and related app configuration.</p><p>This local information is used only to provide the app's core functionality, including transaction history, reporting, reminders, and premium experience handling.</p></section>
+        <section class="card" id="backup"><h2>4. Backups and Exports</h2><p>SmartBudget allows you to create backup files and CSV exports manually. These files may contain your budgeting data, including transactions, accounts, budgets, recurring transactions, notes, and timestamps.</p><ul><li>Backup files are generated locally on your device.</li><li>Exported files are only shared if you choose to share them.</li><li>We do not automatically upload these files to developer-controlled servers.</li><li>If you share or store a backup file using third-party apps or cloud services, that sharing is controlled by you and subject to those third parties' policies.</li></ul></section>
+        <section class="card" id="biometric"><h2>5. Biometric and Device Authentication</h2><p>SmartBudget can optionally use Android biometric or device credential authentication to lock access to the app.</p><ul><li>Biometric verification is handled by the Android operating system.</li><li>We do not collect, access, or store your biometric templates, fingerprint data, facial data, or PIN/password.</li><li>The app only receives the authentication result from the system.</li></ul></section>
+        <section class="card" id="ads"><h2>6. Advertising in the Free Version</h2><p>The free version of SmartBudget may display ads through Google AdMob. AdMob and its partners may process certain technical information to serve, limit, measure, or personalize ads, depending on user region, consent choices, and platform rules.</p><ul><li>This may include device identifiers, IP address, app interaction data, approximate location derived from IP, and diagnostic data.</li><li>Ad serving may be subject to consent prompts where required by law.</li><li>Premium subscribers are intended to receive an ad-free experience.</li></ul><p>For more information about how Google processes data in advertising products, please review Google's policies: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p></section>
+        <section class="card" id="billing"><h2>7. Subscriptions and Google Play Billing</h2><p>SmartBudget offers monthly and yearly premium subscriptions through Google Play Billing.</p><ul><li>Purchase processing, payment collection, renewals, cancellations, and refunds are handled by Google Play.</li><li>The app may receive subscription state information, such as whether premium access is active.</li><li>We do not directly receive your full payment card details.</li></ul><p>Please refer to Google's privacy documentation for more information about how Google Play handles billing data.</p></section>
+        <section class="card" id="notifications"><h2>8. Notifications and Reminders</h2><p>If you enable reminders, SmartBudget may request notification permission so it can send local notifications related to budgeting reminders and recurring transaction processing.</p><p>These notifications are generated by the app on your device and are used only to support app functionality.</p></section>
+        <section class="card" id="sharing"><h2>9. How Information Is Shared</h2><p>We do not sell your personal financial data. Information may be shared only in limited situations such as:</p><ul><li>With Google AdMob for free-tier advertising.</li><li>With Google Play for subscription purchase processing and entitlement handling.</li><li>When you intentionally export, share, or back up your own data using device or third-party sharing features.</li><li>When required by law, regulation, or valid legal process.</li></ul></section>
+        <section class="card" id="retention"><h2>10. Data Retention</h2><ul><li>Local app data remains on your device until you delete it, clear the app's storage, restore over it, or uninstall the app.</li><li>Manual backup or export files remain wherever you store them until you delete them.</li><li>Subscription and advertising-related data may be retained by Google under Google's own retention practices.</li></ul></section>
+        <section class="card" id="security"><h2>11. Security</h2><p>We take reasonable steps in the app's design to reduce accidental exposure of your information, including local storage, optional app lock support, and controlled export and backup flows. However, no method of electronic storage or transmission is completely secure.</p><p>You are responsible for keeping your device secure and for protecting any backup or exported files that you choose to store or share.</p></section>
+        <section class="card" id="children"><h2>12. Children's Privacy</h2><p>SmartBudget is not directed to children under 13, and we do not knowingly design the app to solicit personal information from children. If you believe a child has provided data in violation of applicable law, please contact us.</p></section>
+        <section class="card" id="rights"><h2>13. Your Choices and Rights</h2><ul><li>You can review and delete financial entries from within the app.</li><li>You can disable reminders and app lock features in settings.</li><li>You can remove the app and clear local data by uninstalling it.</li><li>You can manage subscriptions through Google Play.</li><li>You can manage ad-related choices through your device, consent prompts, and Google account settings where applicable.</li></ul></section>
+        <section class="card" id="changes"><h2>14. Changes to This Policy</h2><p>We may update this Privacy Policy from time to time to reflect changes in the app, legal requirements, or third-party service usage. The updated version will be posted on this page with a revised effective date.</p></section>
+        <section class="card" id="contact"><h2>15. Contact</h2><p>If you have questions about this Privacy Policy or SmartBudget's data practices, you can contact us using the details below:</p><ul><li>Email: <a href="mailto:info@edgeflexpro.com">info@edgeflexpro.com</a></li><li>GitHub profile: <a href="https://github.com/Cigilipuf" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf</a></li><li>Privacy policy repository: <a href="https://github.com/Cigilipuf/smartbudget-privacy-policy" target="_blank" rel="noopener noreferrer">github.com/Cigilipuf/smartbudget-privacy-policy</a></li></ul></section>
       </main>
-
       <aside class="toc">
         <h3>On this page</h3>
-        <a href="#overview">Overview</a>
-        <a href="#collect">Information We Collect</a>
-        <a href="#local-storage">Local Storage</a>
-        <a href="#backup">Backups and Exports</a>
-        <a href="#biometric">Biometric Access</a>
-        <a href="#ads">Advertising</a>
-        <a href="#billing">Subscriptions</a>
-        <a href="#notifications">Notifications</a>
-        <a href="#sharing">Sharing</a>
-        <a href="#retention">Retention</a>
-        <a href="#security">Security</a>
-        <a href="#children">Children's Privacy</a>
-        <a href="#rights">Your Rights</a>
-        <a href="#changes">Changes</a>
-        <a href="#contact">Contact</a>
+        <a href="#overview">Overview</a><a href="#collect">Information We Collect</a><a href="#local-storage">Local Storage</a><a href="#backup">Backups and Exports</a><a href="#biometric">Biometric Access</a><a href="#ads">Advertising</a><a href="#billing">Subscriptions</a><a href="#notifications">Notifications</a><a href="#sharing">Sharing</a><a href="#retention">Retention</a><a href="#security">Security</a><a href="#children">Children's Privacy</a><a href="#rights">Your Rights</a><a href="#changes">Changes</a><a href="#contact">Contact</a>
       </aside>
     </div>
-
-    <p class="foot">
-      SmartBudget Privacy Policy. This page is intended to be published using GitHub Pages.
-    </p>
+    <p class="foot">SmartBudget Privacy Policy.</p>
   </div>
 </body>
 </html>
